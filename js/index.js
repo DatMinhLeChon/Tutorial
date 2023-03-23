@@ -32,7 +32,19 @@ for (let i =0; i <signs.length; i++){
     })
 }
 
-void clickResult(addEventListener){
-    
+void clickResult(){
+    if(sign == "+"){
+        resultValue = resultValue + secondValue; 
+    }
+    else if(sign == "-"){
+        resultValue = resultValue - secondValue;
+    }
+    else if(sign == "*"){
+        resultValue = resultValue*secondValue;
+    }
+    else if(sign =="/"){
+        resultValue = resultValue/secondValue;
+    }
 }
+
 
