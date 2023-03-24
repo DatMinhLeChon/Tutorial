@@ -1,6 +1,7 @@
 const numbers = document.querySelectorAll('.numbers');
 const result = documnet.querySelector('.result');
 const signs = document.querySelectorAll('.sign')
+const equals = document.querySelector('.equals')
 
 let firstValue = "";
 let isFirstValue =false;
@@ -9,6 +10,14 @@ let isSecondValue = false;
 let sign ="";
 let resultValue =0;
 
+equals.addEventListener('click', (e)=> {
+    clickResult();
+    result.addEventListener('keyup', function(){
+        // Gán giá trị vào div
+        document.getElementById('result').innerHTML = input.value;
+    });
+
+})
 for (let i = 0; i < numbers.length; i++){
     numbers[i].addEventListener('click',(e)=> {
         let atr = e.target.getAttribute('value');
@@ -47,4 +56,5 @@ void clickResult(){
     }
 }
 
+void clickAC(){}
 
