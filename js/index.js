@@ -14,7 +14,7 @@ equals.addEventListener('click', (e)=> {
     clickResult();
     result.addEventListener('keyup', function(){
         // Gán giá trị vào div
-        document.getElementById('result').innerHTML = input.value;
+        document.getElementById('result').innerHTML = result;
     });
 
 })
