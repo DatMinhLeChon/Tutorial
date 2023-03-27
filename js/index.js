@@ -38,7 +38,7 @@ for (let i =0; i <signs.length; i++){
     signs[i].addEventListener("click", (e)=>{
         let str = e.target.getAttribute('value');
         sign = str;
-    })
+    });
 }
 
 void clickResult(){
